@@ -16,17 +16,19 @@
 	</head>
 	<body>
 		<div id="main">
+					<nav><ul>                                                                                                 
 					{% for category in site.categories %}
 					{% if category == "mainpage" %}					
-					
-					<nav><ul>                                                                                                 
-					{% for node in category %}                                                                           
+					{% for posts in category %}
+					{% for node in posts %}                                                                           
 					{% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}                             
 					<li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>                                  
 					{% endfor %}                  
-					</ul></nav>   
+					{% endfor %}                  
 					{% endif %}					
 					{% endfor %}                                                                                            
+
+					</ul></nav>  
 
 				{% for page in site.posts reversed %} 
 				{% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
