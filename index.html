@@ -17,13 +17,16 @@
 	<body>
 		<div id="main">
 			<nav><ul>                                                                                                 
-					{% for category in "mainpage" %}                                                                        
+					{% for category in site.categories %}
+					{{category}}
+					{% if category == "mainpage" %}					
 					{% for posts in category %}                                                                           
 					{% for node in posts %}                                                                             
 					{% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}                             
 					<li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>                                  
 					{% endfor %}                                                                                        
-					{% endfor %}                                                                                          
+					{% endfor %}                   
+					{% endif %}					
 					{% endfor %}                                                                                            
 				</ul></nav>   
 
