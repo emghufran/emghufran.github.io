@@ -24,9 +24,11 @@
 					<li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li> 
 					{% endif %}
 					{% endfor %} 
+					<li class="p-blog"><a href="blog">blog</a></li> 
 				</ul></nav> 
 
 				{% for page in site.posts reversed %} 
+				{% if node.categories contains "mainpage" %} 	
 				{% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
 				<div id="{{id}}" class="section p-{{id}}">
 					{% if page.icon %}
@@ -47,6 +49,7 @@
 						{{ page.content }}
 					</div>
 				</div>
+				{% endif %}
 				{% endfor %}
 
 
