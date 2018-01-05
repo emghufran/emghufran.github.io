@@ -3,7 +3,7 @@ title: "Publications"
 bg: blue
 color: black
 fa-icon: file-o
-categories: mainpage, personalinfo
+categories: [mainpage, personalinfo]
 ---
 
 # Publications
