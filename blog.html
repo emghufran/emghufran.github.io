@@ -11,7 +11,7 @@ bg: red
 		<title>{{ site.title }}'s Blog</title>
 		<meta name="keywords" content="{{ site.keywords }}">
 		<meta name="description" content="{{ site.description }}">
-		<link rel="stylesheet" href="combo.css">
+		<link rel="stylesheet" href="{{ site.url }}/combo.css">
 		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 		{% if site.favicon %}<link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">{% endif %}
@@ -23,10 +23,10 @@ bg: red
 					{% for node in site.posts reversed %}
 					{% if node.categories contains "mainpage" %} 	
 					{% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %} 
-					<li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li> 
+					<li class="p-{{id}}"><a href="{{ site.url }}/#{{id}}">{{node.title}}</a></li> 
 					{% endif %}
 					{% endfor %} 
-					<li class="p-blog"><a href="blog">blog</a></li> 
+					<li class="p-blog"><a href="{{ site.url }}/blog">blog</a></li> 
 				</ul></nav> 
 
 
