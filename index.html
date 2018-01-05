@@ -17,18 +17,6 @@
 <body>
   <div id="main">
 
-    <nav><ul>
-	  {% for page in site.categories[mainpage] %}
-	  {% for category in "mainpage" %}
-	    {% for posts in category %}
-		  {% for node in posts %}
-		    {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
-              <li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
-          {% endfor %}
-        {% endfor %}
-      {% endfor %}
-    </ul></nav>
-
 	{% for page in site.posts reversed %} 
       {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
       <div id="{{id}}" class="section p-{{id}}">
