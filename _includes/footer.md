@@ -1,4 +1,4 @@
 
 
-Design by [Tim O'Brien](https://github.com/t413/SinglePaged) built: [{{site.time}}]
+Design by [Tim O'Brien](https://github.com/t413/SinglePaged)
 
