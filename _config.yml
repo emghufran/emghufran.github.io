@@ -15,8 +15,10 @@ markdown: kramdown
 
 ### content configuration ###
 title:       "Mohammad Ghufran"
-keywords:    "Mohammad Ghufran, Machine Learning, Statistical Analysis, Natural Language Processing, Data Science, Text Mining"
-description: "Personal page of Mohammad Ghufran"
+keywords:    "Mohammad Ghufran, Machine Learning, Statistical Analysis, Natural Language Processing, Data Science, Text Mining, GenAI, LLMs, Agentic Workflows, MLOps, Data Architecture, Industrial AI"
+description: "Personal page of Mohammad Ghufran. Principal Data Scientist | Senior AI Research Lead | Data Architect. Expert in GenAI, MLOps, and Industrial AI."
+email:       "emghufran@gmail.com"
+linkedin:    "emghufran"
 source_link: "https://github.com/emghufran/emghufran.github.io"
 favicon:     #put a path like: "img/favicon.ico"
 touch_icon:  #put a path like: "img/apple-touch-icon.png"
@@ -35,4 +37,3 @@ colors:
 
 kramdown:
   auto_ids:  false
-
