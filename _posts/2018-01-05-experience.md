@@ -5,6 +5,7 @@ color: black
 fa-icon: briefcase
 style: left
 categories: [mainpage, personalinfo]
+date: 2025-12-21
 ---
 
 # Experience
